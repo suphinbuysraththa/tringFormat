@@ -1,0 +1,2 @@
+# tringFormat
+)     If Not IsString($sStr) Then Return SetError(1, 1, 0)     Local $i, $iMax, $sVal     Local $aParams, $aCallArgArray[@NumParams + 1]     $aCallArgArray[0] = 'CallArgArray'     $aParams = StringRegExp($sStr, '%([0-9]{1,2})$[-+. #0-9diouxXeEfgGs]', 3) ; Get indexes.     If @error Then Return StringFormat($sStr, $v1, $v2, _         $v3, $v4, $v5, $v6, $v7, $v8, $v9, $v10, $v11, $v12, $v13, $v14, $v15, _     
